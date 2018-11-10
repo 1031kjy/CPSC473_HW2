@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Assignment #2</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+  <script type="text/javascript" src="controller.js"></script>
+
+  <table border="5" bordercolor="blue" width="700" height="500" cellpadding="0" cellspacing="0">
+    <tr>
+      <td colspan="2" height="100" align="center">
+				Last Name: <input id="lastName" type="text" placeholder="last name"></input>
+				<input type="button" value="Search" onclick="myEventHandler()"></input>
+      </td>
+    </tr>
+    <tr>
+      <td width="300" height="300" align="center">
+				<b>students found</b> <br/><br/>
+				<span id = "students" onclick="myEventHandler2()">
+				</span>
+      </td>
+      <td width="400" height="300" align="center">
+				<b>grades for <span id = "studentsName"></span></b><br/><br/>
+				<table border="1" bordercolor="black" width="200" height="100" cellpadding="0" cellspacing="0">
+					<tr>
+						<th>Course</th>
+						<th>GPA</th>
+					</tr>
+					<tr>
+						<td><span id="courseInfo"></td>
+						<td><span id="gpaInfo"></td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+					</tr>
+				</table>
+				<span id ="grades">
+				</span>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
